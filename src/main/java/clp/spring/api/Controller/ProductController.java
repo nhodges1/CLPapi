@@ -43,4 +43,11 @@ public class ProductController {
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
         }
     }
+
+    // Task4, Retrieve products by price in asc order
+    @GetMapping("/sorted")
+    public ResponseEntity<List<Product>> getAllProductsSortedByPrice() {
+        List<Product> products = productService.getAllProductsSortedByPrice();
+        return new ResponseEntity<>(products, HttpStatus.OK);
+    }
 }

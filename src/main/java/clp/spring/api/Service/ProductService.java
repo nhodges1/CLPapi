@@ -30,4 +30,9 @@ public class ProductService {
     public Product getProductById(Long id) {
         return productRepository.findById(id).orElse(null);
     }
+
+    // Task4, List products by price in asc order
+    public List<Product> getAllProductsSortedByPrice() {
+        return productRepository.findAllByOrderByPriceAsc();
+    }
 }
