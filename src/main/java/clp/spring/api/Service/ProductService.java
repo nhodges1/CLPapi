@@ -5,6 +5,9 @@ import clp.spring.api.Repository.ProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
+
 @Service
 public class ProductService {
     private final ProductRepository productRepository;
@@ -13,8 +16,12 @@ public class ProductService {
     public ProductService(ProductRepository productRepository) {
         this.productRepository = productRepository;
     }
-
+    // Task1, Create Product
     public Product createProduct(Product product) {
         return productRepository.save(product);
+    }
+    // Task2, Retrieve all products
+    public List<Product> getAllProducts() {
+        return productRepository.findAll();
     }
 }
