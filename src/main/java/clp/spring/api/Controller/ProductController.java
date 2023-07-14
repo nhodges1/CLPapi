@@ -60,4 +60,11 @@ public class ProductController {
         List<Product> filteredProducts = productService.filterProductsByPriceRange(minPrice, maxPrice);
         return new ResponseEntity<>(filteredProducts, HttpStatus.OK);
     }
+
+    // Task6, Retrieve the count of all products
+    @GetMapping("/count")
+    public ResponseEntity<Long> getProductCount() {
+        Long productCount = productService.getProductCount();
+        return new ResponseEntity<>(productCount, HttpStatus.OK);
+    }
 }

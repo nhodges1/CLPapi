@@ -40,4 +40,9 @@ public class ProductService {
     public List<Product> filterProductsByPriceRange(double minPrice, double maxPrice) {
         return productRepository.findByPriceBetween(minPrice, maxPrice);
     }
+
+    // Task6, Retrieve the count of all products
+    public Long getProductCount() {
+        return productRepository.count();
+    }
 }
