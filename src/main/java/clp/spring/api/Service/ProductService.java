@@ -35,4 +35,9 @@ public class ProductService {
     public List<Product> getAllProductsSortedByPrice() {
         return productRepository.findAllByOrderByPriceAsc();
     }
+
+    // Task5, Filter products by price range
+    public List<Product> filterProductsByPriceRange(double minPrice, double maxPrice) {
+        return productRepository.findByPriceBetween(minPrice, maxPrice);
+    }
 }

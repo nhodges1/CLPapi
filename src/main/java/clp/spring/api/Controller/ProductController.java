@@ -50,4 +50,14 @@ public class ProductController {
         List<Product> products = productService.getAllProductsSortedByPrice();
         return new ResponseEntity<>(products, HttpStatus.OK);
     }
+
+    // Task5, Filter products by price range
+    @GetMapping("/filter")
+    public ResponseEntity<List<Product>> filterProductsByPriceRange(
+            @RequestParam("minPrice") double minPrice,
+            @RequestParam("maxPrice") double maxPrice
+    ) {
+        List<Product> filteredProducts = productService.filterProductsByPriceRange(minPrice, maxPrice);
+        return new ResponseEntity<>(filteredProducts, HttpStatus.OK);
+    }
 }

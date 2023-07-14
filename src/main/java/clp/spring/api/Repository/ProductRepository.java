@@ -8,4 +8,7 @@ import java.util.List;
 public interface ProductRepository extends JpaRepository<Product, Long> {
     // Task4, List products by asc order
     List<Product> findAllByOrderByPriceAsc();
+
+    // Task5, Filter products by price range
+    List<Product> findByPriceBetween(double minPrice, double maxPrice);
 }
