@@ -67,4 +67,13 @@ public class ProductController {
         Long productCount = productService.getProductCount();
         return new ResponseEntity<>(productCount, HttpStatus.OK);
     }
+
+    // Task7, Search products by name
+    @GetMapping("/search")
+    public ResponseEntity<List<Product>> searchProductsByName(
+            @RequestParam("name") String name
+    ) {
+        List<Product> searchResults = productService.searchProductsByName(name);
+        return new ResponseEntity<>(searchResults, HttpStatus.OK);
+    }
 }

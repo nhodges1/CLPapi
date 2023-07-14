@@ -6,6 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="44f3b61a-6037-4b04-9904-4f0cdd5ddf95" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/src/main/java/clp/spring/api/Controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/clp/spring/api/Controller/ProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/clp/spring/api/Repository/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/clp/spring/api/Repository/ProductRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/clp/spring/api/Service/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/clp/spring/api/Service/ProductService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -45,4 +45,9 @@ public class ProductService {
     public Long getProductCount() {
         return productRepository.count();
     }
+
+    // Task7, Search products by name
+    public List<Product> searchProductsByName(String name) {
+        return productRepository.findByNameContainingIgnoreCase(name);
+    }
 }
