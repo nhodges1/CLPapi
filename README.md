@@ -1,4 +1,4 @@
-# CLPapi
+# Async_CLP_api
 
 # Task 1
 Create a REST API endpoint to create a new product.
@@ -7,34 +7,62 @@ Create a REST API endpoint to create a new product.
 
 Use Case: Create a REST API endpoint that allows users to create a new product. The API should accept product details in the request payload, save the product to the database, and return the created product as a JSON response.
 
-
-
-Classes and Responsibilities:
-
-
-
-Controller: The ProductController class is responsible for handling incoming HTTP requests and directing them to the appropriate methods. It exposes a POST endpoint at /products to create a new product. The product details are provided in the request body as JSON.
+# Task 2
+Task: Create a REST API endpoint to retrieve a list of products
 
 
 
-Service: The ProductService class contains the business logic for creating a new product. It interacts with the ProductRepository to save the product in the database. The service layer abstracts the business operations from the controller.
+Use Case: The goal of this task is to develop a functionality that allows fetching all products from a database and returning them as a JSON response. This will enable users of the API to access and retrieve information about all available products.
+
+# Task 3
+Create a REST API endpoint to retrieve a product by its ID.
 
 
 
-Repository: The ProductRepository interface defines the contract for interacting with the database. It provides methods for persisting and retrieving product entities. In this case, it is responsible for saving the newly created product.
+Use Case: The use case for this task is to fetch a specific product by providing its ID and return the product details as a JSON response.
+
+# Task 4
+Create a REST API endpoint to fetch products sorted by price in ascending order.
 
 
 
-Entity: The Product entity class represents the product's attributes and structure. It typically includes properties such as id, name, price, and description. These attributes define the data that will be stored in the database.
+Task: The objective is to build an endpoint that retrieves all products from the database and returns them as a JSON response, sorted by price in ascending order.
 
 
 
-Task: Implement the following functionality using Spring Boot and .NET:
+Use Case: The use case for this task involves fetching product data from the database and presenting it to the user in a sorted manner, specifically by price in ascending order. This allows for easy navigation and comparison of product prices.
 
-Spring Boot:
-Create a ProductController class with a POST endpoint /product to accept product details as JSON in the request payload.
-Create a ProductService class with a method createProduct that takes the product details, saves the product using the ProductRepository, and returns the created product as a JSON response.
-Create a ProductRepository interface with methods to save and retrieve product entities.
-Create a Product entity class with attributes like id, name, price, and description.
+# Task 5
+Task: Create a REST API endpoint to filter products by price range.
 
-By implementing the above classes and functionalities, you'll be able to create a REST API endpoint that allows users to create a new product by providing the product details in the request payload. The product will be saved to the database, and the API will return the created product as a JSON response.
+
+
+Use Case: The goal of this task is to develop a functionality that allows users to fetch products from a database that fall within a specified price range. The retrieved products should be returned as a JSON response.
+
+# Task 6
+Task : Create a REST API endpoint to retrieve the count of products
+
+
+
+Use Case: In this task, your goal is to create a REST API endpoint that retrieves the total count of products stored in the database. The count will be returned as a JSON response.
+
+# Task 7
+Task: Create a REST API endpoint to search for products by name
+
+
+
+Use Case: The objective of this task is to develop a RESTful API endpoint that allows users to search for products based on their name. The API should accept a search query as a request parameter, perform a search operation using the provided name, and return the search results in JSON format.
+
+# Task8
+Create a REST API endpoint to update an existing product.
+
+
+
+Task : The objective of this task is to create a REST API endpoint that allows updating an existing product in the database. The API should accept the updated product details and the ID of the product to be updated in the request payload, and return the updated product as a JSON response.
+
+# Task9
+Task: Create a REST API endpoint to delete a product by its ID.
+
+
+
+Use Case: Delete the product with the provided ID from the database.
