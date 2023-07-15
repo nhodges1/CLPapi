@@ -76,4 +76,18 @@ public class ProductController {
         List<Product> searchResults = productService.searchProductsByName(name);
         return new ResponseEntity<>(searchResults, HttpStatus.OK);
     }
+
+    // Task8, Update an existing product
+    @PutMapping("/{id}")
+    public ResponseEntity<Product> updateProduct(
+            @PathVariable Long id,
+            @RequestBody Product updatedProduct
+    ) {
+        Product product = productService.updateProduct(id, updatedProduct);
+        if (product != null) {
+            return new ResponseEntity<>(product, HttpStatus.OK);
+        } else {
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+        }
+    }
 }
