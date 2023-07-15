@@ -7,6 +7,9 @@
     <list default="true" id="44f3b61a-6037-4b04-9904-4f0cdd5ddf95" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/clp/spring/api/Controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/clp/spring/api/Controller/ProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/clp/spring/api/Service/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/clp/spring/api/Service/ProductService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/clp/spring/api/Controller/ProductController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/clp/spring/api/Controller/ProductController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/clp/spring/api/Service/ProductService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/clp/spring/api/Service/ProductService.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

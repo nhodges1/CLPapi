@@ -63,4 +63,14 @@ public class ProductService {
             return null;
         }
     }
+
+    //Task9, Delete a product by id
+    public boolean deleteProduct(Long id) {
+        if (productRepository.existsById(id)) {
+            productRepository.deleteById(id);
+            return true;
+        } else {
+            return false;
+        }
+    }
 }
